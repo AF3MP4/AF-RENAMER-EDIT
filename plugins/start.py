@@ -14,19 +14,14 @@ async def start(client, message):
     user = message.from_user
     if not await db.is_user_exist(user.id):
         await db.add_user(user.id)             
-    txt=f"👋 Hello Developer {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with Custom thumbnail support.\n\nSend me any video or document !"
+    txt=f"👋 Hello {user.mention}💗 \n\nI am an Advance file Renamer and file Converter BOT with Custom thumbnail support.\n\nSend me any video or document !"
     button=InlineKeyboardMarkup([[
-        InlineKeyboardButton(" Developer ", callback_data='dev')
-        ],[
-        InlineKeyboardButton(' Updates', url='https://t.me/af_updates'),
         InlineKeyboardButton(' Support', url='https://t.me/AF_KINGbot')
         ],[
         InlineKeyboardButton(' About', callback_data='about'),
         InlineKeyboardButton(' Help', callback_data='help')
         ],[
-        InlineKeyboardButton(" Join Our Movie Channel !", url='https://t.me/A_F_MOVIES')
-        ],[
-        InlineKeyboardButton("❤️ Subscribe YT ❤️", url='https://youtube.com/channel/UCJpGpk7DKk-xxhoiWWUR_Sw')
+        InlineKeyboardButton("❤️ Subscribe us on YouTube ❤️", url='https://youtube.com/channel/UCJpGpk7DKk-xxhoiWWUR_Sw')
         ]
         ])
     if START_PIC:
@@ -68,19 +63,16 @@ async def cb_handler(client, query: CallbackQuery):
     data = query.data 
     if data == "start":
         await query.message.edit_text(
-            text=f"""👋 Hello Developer {query.from_user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !""",
+            text=f"""👋 Hello {query.from_user.mention} 💗 \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !""",
             reply_markup=InlineKeyboardMarkup( [[
         InlineKeyboardButton(" Developer ", callback_data='dev')
         ],[
-        InlineKeyboardButton(' Updates', url='https://t.me/af_updates'),
         InlineKeyboardButton(' Support', url='https://t.me/AF_KINGbot')
         ],[
         InlineKeyboardButton(' About', callback_data='about'),
         InlineKeyboardButton(' Help', callback_data='help')
         ],[
-        InlineKeyboardButton(" Join Our Movie Channel !", url='https://t.me/A_F_MOVIES')
-        ],[
-        InlineKeyboardButton("❤️ Subscribe YT ❤️", url='https://youtube.com/channel/UCJpGpk7DKk-xxhoiWWUR_Sw')
+        InlineKeyboardButton("❤️ Subscribe on YouTube ❤️", url='https://youtube.com/channel/UCJpGpk7DKk-xxhoiWWUR_Sw')
         ]
         ]
                 )
