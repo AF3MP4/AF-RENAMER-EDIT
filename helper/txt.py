@@ -9,7 +9,8 @@ class mr(object):
 
     ABOUT_TXT = """
 ╭───────────⍟
-├🤖 My Name is : {}              
+├🤖 ᴍʏ ɴᴀᴍᴇ ɪs : {}
+├👽 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/AF_KINGbot>AF</a>         
 ╰───────────────⍟
                                 """
     HELP_TXT = """
@@ -29,5 +30,5 @@ Example:- /set_caption 📕 File Name: {filename}
 ⏰ Duration: {duration}
 
 ✏️ <b><u>HOW TO RENAME A FILE</u></b>
-•> send any file and click rename option and type new file name and \n send select [ document, video, audio ]👈 choice this.
+•> send any file and click rename option and type new file name with extension (.mkv/.mp4 etc..) and \n send select [ document, video, audio ]👈 choice this.
 """
