@@ -14,7 +14,7 @@ DB_NAME = os.environ.get("DB_NAME","Cluster0")
 
 DB_URL = os.environ.get("DB_URL","mongodb+srv://aflahk80:aflah12345@cluster0.h7rhn.mongodb.net/?retryWrites=true&w=majority")
  
-FLOOD = int(os.environ.get("FLOOD", "20"))
+FLOOD = int(os.environ.get("FLOOD", "40"))
 
 START_PIC = os.environ.get("START_PIC", "https://graph.org/AF-THE-RENAMER-04-15")
 
